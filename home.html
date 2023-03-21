@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- toastify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- Custom CSS -->
+  <link href="./style/home.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <div id="container">
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <h4 class="navbar-brand text-white" href="#" id="name"></h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mt-3 mt-md-5">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <h4 class="text-center">Input</h4>
+            <div class="border rounded-3 p-4 d-flex align-items center" style="height:122px">
+              <div class="input-group">
+                <input type="text" class="form-control bg-transparent" placeholder="Type your text here" id="inputField" value="">
+                <button class="btn btn-outline-secondary" id="btn" onclick="clearData()">Clear</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="text-center">Cities</h4>
+            <div class="border rounded-3 py-4" id="text">
+              <div class="text-center" id="original-string">
+                <p>
+                    You can see cities collection And also can add city Or check city.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt-md-5">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <h4 class="text-center">Buttons</h4>
+            <div class="border rounded-3 py-4 text-center" id="btn-box">
+               <button class="btn btn-danger" onclick="printCities()">Print All Cities</button>
+              <button class="btn btn-danger" onclick="addCity()">Add Your City In List</button>
+              <button class="btn btn-danger" onclick="checkCity()"> Check Your City In List</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="text-center">Output / Result</h4>
+            <div class="border rounded-3 py-4 text-center" id="output" style="min-height: 272px">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-secondary mt-3" id="btn" onclick="clearData()">Clear Output</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center text-white mb-0 ">
+            &copy;2023 All Rights Are Reserved. <a href="#" class="text-white
+             text-decoration-none fw-bold">www.umairahmad.net</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+                         <!-- bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.jss"></script>
+
+                   <!-- Custom Js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

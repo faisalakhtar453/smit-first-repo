@@ -1,0 +1,69 @@
+body{
+    /* background-color: aquamarine; */
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.form-container {
+    display: flex;
+    justify-content: center; /* horizontally centers the form */
+    align-items: center; /* vertically centers the form */
+    height: 100vh; /* sets the height of the container to the full viewport height */
+  }
+  
+form{
+    background-color: #023047;
+    color: white;
+}
+h1{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #a8dadc;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+}
+.mail{
+    border-radius: 5px;
+    background-color: #a8dadc;
+    opacity: 1;
+    margin: 15px 30px 15px;
+}
+.pass{
+    border-radius: 5px;
+    background-color: #a8dadc;
+    opacity: 1;
+    margin: 15px 30px 15px;
+}
+/* svg{
+    padding-left: 10px;
+} */
+button{
+    margin: 15px 30px 15px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 15px 10px;
+    background-color: #a8dadc;
+    cursor: pointer;
+}
+.a{
+    text-decoration: none;
+    color: white;
+    margin: 15px 15px;
+    margin-left: 338px;
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+}
+.name{
+    margin-left: 30px;
+    padding-right: 226px;
+}
