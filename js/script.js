@@ -1,3 +1,4 @@
+// login btn
 const login = ()=>{
   event.preventDefault()
   var userName = document.getElementById("name").value
@@ -29,6 +30,7 @@ const login = ()=>{
   document.getElementById("name").innerHTML = username
 
 let cities = ["Islamabad", "Lahore", "Karachi", "Peshawar", "Quetta"]
+// print cities
 function printCities() {
     let text = "";
     for (let i = 0; i < cities.length; i++) {
@@ -52,7 +54,7 @@ function printCities() {
       onClick: function(){} // Callback after click
     }).showToast();
 }
-
+// add city button
 function addCity() {
   let val = document.getElementById("inputField").value
   if (val.length>3) {
@@ -97,8 +99,7 @@ function addCity() {
    }
     
 }
-
-
+// check city name
 function checkCity() {
   let checkCity = cities.map(city => city.toLowerCase());
   let val = document.getElementById("inputField").value.toLowerCase();
