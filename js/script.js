@@ -22,10 +22,8 @@ const login = ()=>{
         onClick: function(){} // Callback after click
       }).showToast();
     }   
-    // set a value in local storage
     localStorage.setItem('username', userName);
   }
-  // get a value from local storage
   let username = localStorage.getItem('username');
 
   document.getElementById("name").innerHTML = username
